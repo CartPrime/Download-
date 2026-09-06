@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-  <title>Download CartPrime App</title>
+  <meta name="theme-color" content="#0b0b0f">
 
-  <meta
-    name="description"
-    content="Download the official CartPrime Android app and explore shopping and earning opportunities."
-  >
+  <title>CartPrime App Download</title>
 
   <style>
-
     * {
       margin: 0;
       padding: 0;
@@ -24,666 +20,297 @@
 
     body {
       min-height: 100vh;
-      background: #0d0f12;
-      color: #ffffff;
-
+      background:
+        radial-gradient(circle at top, #20202a 0%, #0b0b0f 45%, #050507 100%);
+      color: white;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      padding: 18px;
+      padding: 20px;
     }
 
     .container {
       width: 100%;
-      max-width: 450px;
+      max-width: 430px;
+      text-align: center;
     }
 
     .card {
-      background: #15181d;
-      border: 1px solid #292e36;
-      border-radius: 30px;
-      padding: 32px 24px;
-      text-align: center;
-
-      box-shadow:
-        0 20px 60px rgba(0,0,0,.5);
+      background: rgba(20, 20, 27, 0.96);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 28px;
+      padding: 35px 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
     }
-
-
-    /* =========================
-       LOGO
-    ========================= */
 
     .logo {
-      width: 120px;
-      height: 120px;
-
-      border-radius: 50%;
-
+      width: 100px;
+      height: 100px;
+      border-radius: 24px;
       object-fit: cover;
-
       display: block;
-
-      margin: 0 auto 20px;
-
-      border: 2px solid #ffc107;
-
-      box-shadow:
-        0 10px 35px rgba(255,193,7,.25);
+      margin: 0 auto 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
     }
-
-
-    /* =========================
-       TITLE
-    ========================= */
 
     h1 {
       font-size: 30px;
-      font-weight: 800;
       margin-bottom: 10px;
-    }
-
-    .highlight {
-      color: #ffc107;
-    }
-
-    .subtitle {
-      color: #aeb4bd;
-      font-size: 15px;
-      line-height: 1.7;
-      margin-bottom: 20px;
-    }
-
-
-    /* =========================
-       EARNING
-    ========================= */
-
-    .earning {
-      background: #1c2026;
-
-      border: 1px solid #323740;
-
-      border-radius: 19px;
-
-      padding: 17px;
-
-      margin: 20px 0;
-    }
-
-    .earning-title {
-      color: #ffc107;
-
-      font-size: 17px;
-
       font-weight: 800;
+    }
 
+    .tagline {
+      font-size: 16px;
+      color: #b9b9c2;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    .earn {
+      background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.03)
+      );
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    .earn-title {
+      font-size: 17px;
+      font-weight: 700;
       margin-bottom: 8px;
     }
 
-    .earning-text {
-      color: #c4c8ce;
-
-      font-size: 13px;
-
-      line-height: 1.65;
+    .earn-text {
+      color: #bdbdc6;
+      font-size: 14px;
+      line-height: 1.6;
     }
 
-
-    /* =========================
-       APK DOWNLOAD
-    ========================= */
-
     .download-btn {
-
-      width: 100%;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
-      gap: 10px;
-
-      padding: 17px;
-
-      background: #ffc107;
-
-      color: #111111;
-
-      border-radius: 16px;
-
+      width: 100%;
+      min-height: 58px;
+      background: white;
+      color: #08080b;
       text-decoration: none;
-
+      border-radius: 16px;
       font-size: 17px;
-
       font-weight: 800;
-
-      box-shadow:
-        0 10px 25px rgba(255,193,7,.2);
-
-      transition: .2s;
-
-      cursor: pointer;
+      margin-bottom: 14px;
+      transition: 0.2s ease;
     }
 
     .download-btn:hover {
       transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(255,255,255,0.12);
     }
 
     .download-btn:active {
-      transform: scale(.98);
+      transform: scale(0.98);
     }
-
-
-    /* =========================
-       BROWSER BUTTON
-    ========================= */
 
     .browser-btn {
-
-      width: 100%;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
-      gap: 9px;
-
-      margin-top: 12px;
-
-      padding: 14px;
-
-      background: #242830;
-
-      color: #ffffff;
-
-      border: 1px solid #383e48;
-
-      border-radius: 15px;
-
+      width: 100%;
+      min-height: 52px;
+      background: #18181f;
+      color: white;
       text-decoration: none;
-
-      font-size: 14px;
-
-      font-weight: 700;
-
-      cursor: pointer;
-
-      transition: .2s;
-    }
-
-    .browser-btn:hover {
-      background: #2c313a;
-    }
-
-    .browser-btn:active {
-      transform: scale(.98);
-    }
-
-
-    /* =========================
-       INSTAGRAM NOTICE
-    ========================= */
-
-    .browser-note {
-
-      margin-top: 15px;
-
-      padding: 14px;
-
-      background: #20242b;
-
-      border: 1px solid #343a44;
-
+      border: 1px solid rgba(255,255,255,0.1);
       border-radius: 15px;
-
-      color: #aeb4bd;
-
-      font-size: 12px;
-
-      line-height: 1.65;
+      font-size: 15px;
+      font-weight: 700;
     }
 
-    .browser-note b {
-      color: #ffc107;
-    }
-
-
-    /* =========================
-       SECURITY
-    ========================= */
-
-    .secure {
-
-      margin-top: 14px;
-
-      color: #7ddc91;
-
+    .note {
+      margin-top: 20px;
+      background: rgba(255, 193, 7, 0.08);
+      border: 1px solid rgba(255, 193, 7, 0.15);
+      border-radius: 15px;
+      padding: 15px;
+      color: #d8d8df;
       font-size: 13px;
+      line-height: 1.6;
     }
-
-
-    /* =========================
-       APP INFO
-    ========================= */
-
-    .info {
-
-      display: flex;
-
-      justify-content: space-between;
-
-      gap: 8px;
-
-      margin-top: 25px;
-
-      padding: 18px 4px;
-
-      border-top: 1px solid #292e36;
-
-      border-bottom: 1px solid #292e36;
-    }
-
-    .info-item {
-
-      flex: 1;
-
-      color: #8f96a1;
-
-      font-size: 12px;
-    }
-
-    .info-item strong {
-
-      display: block;
-
-      color: #ffffff;
-
-      font-size: 13px;
-
-      margin-bottom: 5px;
-    }
-
-
-    /* =========================
-       INSTALLATION
-    ========================= */
 
     .steps {
-
+      margin-top: 25px;
       text-align: left;
-
-      margin-top: 28px;
     }
 
     .steps h2 {
-
-      font-size: 19px;
-
-      margin-bottom: 17px;
+      font-size: 18px;
+      margin-bottom: 15px;
     }
 
     .step {
-
       display: flex;
-
       gap: 12px;
-
-      margin-bottom: 15px;
-
-      color: #aeb4bd;
-
-      font-size: 13px;
-
-      line-height: 1.6;
+      margin-bottom: 13px;
+      color: #c6c6ce;
+      font-size: 14px;
+      line-height: 1.5;
     }
 
     .number {
-
       min-width: 27px;
-
       height: 27px;
-
       border-radius: 50%;
-
-      background: #ffc107;
-
-      color: #111111;
-
+      background: #fff;
+      color: #08080b;
       display: flex;
-
-      align-items: center;
-
       justify-content: center;
-
-      font-size: 12px;
-
+      align-items: center;
       font-weight: 800;
+      font-size: 13px;
     }
-
-
-    /* =========================
-       FOOTER
-    ========================= */
 
     .footer {
-
-      margin-top: 20px;
-
-      text-align: center;
-
-      color: #666d77;
-
-      font-size: 11px;
-
-      line-height: 1.6;
+      margin-top: 22px;
+      color: #777780;
+      font-size: 12px;
     }
 
-
-    /* =========================
-       MOBILE
-    ========================= */
-
     @media (max-width: 380px) {
-
-      body {
-        padding: 12px;
-      }
-
       .card {
-        padding: 27px 17px;
-
-        border-radius: 25px;
-      }
-
-      .logo {
-        width: 95px;
-        height: 95px;
+        padding: 28px 18px;
       }
 
       h1 {
         font-size: 26px;
       }
 
+      .logo {
+        width: 85px;
+        height: 85px;
+      }
     }
-
   </style>
-
 </head>
-
 
 <body>
 
-
   <div class="container">
-
 
     <div class="card">
 
-
-      <!-- =========================
-           CARTPRIME LOGO
-      ========================= -->
-
+      <!-- CartPrime Logo -->
       <img
-        src="https://plain-apac-prod-public.komododecks.com/202609/06/gwycqEbIEqoGFqsTtwzV/image.png"
         class="logo"
+        src="https://plain-apac-prod-public.komododecks.com/202609/06/gwycqEbIEqoGFqsTtwzV/image.png"
         alt="CartPrime Logo"
       >
 
+      <!-- Title -->
+      <h1>Welcome to CartPrime</h1>
 
-      <!-- =========================
-           TITLE
-      ========================= -->
-
-      <h1>
-
-        Welcome to
-
-        <span class="highlight">
-          CartPrime
-        </span>
-
-      </h1>
-
-
-      <p class="subtitle">
-
-        Download the official CartPrime Android app
-        and enjoy a faster, smoother shopping experience.
-
+      <p class="tagline">
+        Shop. Share. Earn.
+        <br>
+        Get the CartPrime app today.
       </p>
 
+      <!-- Earning Section -->
+      <div class="earn">
 
-      <!-- =========================
-           EARNING BOX
-      ========================= -->
-
-      <div class="earning">
-
-        <div class="earning-title">
-
-          💰 Shop. Share. Earn.
-
+        <div class="earn-title">
+          💰 Discover Earning Opportunities
         </div>
 
-        <div class="earning-text">
-
-          Discover earning opportunities with CartPrime.
-          Share products, grow your reach, and earn through
+        <div class="earn-text">
+          Share products, grow your reach and earn through
           eligible CartPrime programs.
-
         </div>
 
       </div>
 
-
-      <!-- =========================
-           APK DOWNLOAD BUTTON
-      ========================= -->
-
+      <!-- APK DOWNLOAD -->
       <a
-        href="./CartPrimeStore.apk"
         class="download-btn"
+        href="./CartPrimeStore.apk"
         download="CartPrimeStore.apk"
       >
-
-        📱 Download CartPrime App
-
+        📱 &nbsp; Download CartPrime App
       </a>
 
-
-      <!-- =========================
-           OPEN DOWNLOAD PAGE
-      ========================= -->
-
+      <!-- OPEN IN BROWSER -->
       <a
-        href="DOWNLOAD_PAGE_URL"
         class="browser-btn"
+        href="https://cartprime.vercel.app/"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener"
       >
-
-        🌐 Open Download Page in Browser
-
+        🌐 &nbsp; Open CartPrime Website
       </a>
 
-
-      <!-- =========================
-           INSTAGRAM NOTICE
-      ========================= -->
-
-      <div class="browser-note">
-
-        ⚠️ <b>Instagram users:</b>
-
-        <br><br>
-
-        If the APK download does not start inside Instagram,
-        tap the <b>⋯ menu</b> and choose
+      <!-- Instagram Notice -->
+      <div class="note">
+        ⚠️ <b>Using Instagram?</b><br>
+        If the APK doesn't download inside Instagram,
+        tap the <b>⋯</b> menu and choose
         <b>Open in browser</b> or <b>Open in Chrome</b>.
-
       </div>
 
-
-      <!-- =========================
-           SECURITY
-      ========================= -->
-
-      <div class="secure">
-
-        ✓ Official CartPrime Android App
-
-      </div>
-
-
-      <!-- =========================
-           APP INFORMATION
-      ========================= -->
-
-      <div class="info">
-
-
-        <div class="info-item">
-
-          <strong>
-            Android
-          </strong>
-
-          Supported
-
-        </div>
-
-
-        <div class="info-item">
-
-          <strong>
-            APK
-          </strong>
-
-          Direct Download
-
-        </div>
-
-
-        <div class="info-item">
-
-          <strong>
-            Free
-          </strong>
-
-          Download
-
-        </div>
-
-
-      </div>
-
-
-      <!-- =========================
-           INSTALLATION STEPS
-      ========================= -->
-
+      <!-- Installation Steps -->
       <div class="steps">
 
-
-        <h2>
-          How to Install
-        </h2>
-
+        <h2>📲 How to Install</h2>
 
         <div class="step">
-
-          <span class="number">
-            1
-          </span>
-
-          <span>
-
-            Tap <b>Download CartPrime App</b>
-            and wait for the APK to download.
-
-          </span>
-
+          <div class="number">1</div>
+          <div>
+            Tap <b>Download CartPrime App</b>.
+          </div>
         </div>
 
+        <div class="step">
+          <div class="number">2</div>
+          <div>
+            Wait for the APK download to finish.
+          </div>
+        </div>
 
         <div class="step">
-
-          <span class="number">
-            2
-          </span>
-
-          <span>
-
+          <div class="number">3</div>
+          <div>
             Open the downloaded
             <b>CartPrimeStore.apk</b> file.
-
-          </span>
-
+          </div>
         </div>
 
-
         <div class="step">
-
-          <span class="number">
-            3
-          </span>
-
-          <span>
-
+          <div class="number">4</div>
+          <div>
             If Android asks for permission,
             allow installation from this source.
-
-          </span>
-
+          </div>
         </div>
-
 
         <div class="step">
-
-          <span class="number">
-            4
-          </span>
-
-          <span>
-
-            Tap <b>Install</b>
-            and open the CartPrime app.
-
-          </span>
-
+          <div class="number">5</div>
+          <div>
+            Tap <b>Install</b> and open CartPrime.
+          </div>
         </div>
-
 
       </div>
 
+      <div class="footer">
+        © 2026 CartPrime. All rights reserved.
+      </div>
 
     </div>
-
-
-    <!-- =========================
-         FOOTER
-    ========================= -->
-
-    <div class="footer">
-
-      © 2026 CartPrime. All rights reserved.
-
-      <br>
-
-      Download and use CartPrime responsibly.
-
-    </div>
-
 
   </div>
-
 
 </body>
 </html>
