@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Download CartPrime App</title>
 
-  <meta name="description"
-    content="Download the official CartPrime Android app and explore shopping and earning opportunities.">
+  <meta
+    name="description"
+    content="Download the official CartPrime Android app and explore shopping and earning opportunities."
+  >
 
   <style>
 
@@ -22,9 +29,11 @@
       min-height: 100vh;
       background: #0d0f12;
       color: #ffffff;
+
       display: flex;
       justify-content: center;
       align-items: center;
+
       padding: 18px;
     }
 
@@ -35,34 +44,52 @@
 
     .card {
       background: #15181d;
+
       border: 1px solid #292e36;
+
       border-radius: 30px;
+
       padding: 32px 24px;
+
       text-align: center;
-      box-shadow: 0 20px 60px rgba(0,0,0,.5);
+
+      box-shadow:
+        0 20px 60px rgba(0,0,0,.5);
     }
 
-    /* CARTPRIME LOGO */
+
+    /* =========================
+       CARTPRIME LOGO
+    ========================= */
 
     .logo {
       width: 120px;
       height: 120px;
+
       border-radius: 50%;
+
       object-fit: cover;
+
       display: block;
+
       margin: 0 auto 20px;
+
+      border: 2px solid #ffc107;
 
       box-shadow:
         0 10px 35px rgba(255,193,7,.25);
-
-      border: 2px solid #ffc107;
     }
 
-    /* TITLE */
+
+    /* =========================
+       TITLE
+    ========================= */
 
     h1 {
       font-size: 30px;
+
       font-weight: 800;
+
       margin-bottom: 10px;
     }
 
@@ -72,47 +99,70 @@
 
     .subtitle {
       color: #aeb4bd;
+
       font-size: 15px;
+
       line-height: 1.7;
+
       margin-bottom: 20px;
     }
 
-    /* EARNING BOX */
+
+    /* =========================
+       EARNING BOX
+    ========================= */
 
     .earning {
       background: #1c2026;
+
       border: 1px solid #323740;
+
       border-radius: 19px;
+
       padding: 17px;
+
       margin: 20px 0;
     }
 
     .earning-title {
       color: #ffc107;
+
       font-size: 17px;
+
       font-weight: 800;
+
       margin-bottom: 8px;
     }
 
     .earning-text {
       color: #c4c8ce;
+
       font-size: 13px;
+
       line-height: 1.65;
     }
 
-    /* DOWNLOAD BUTTON */
+
+    /* =========================
+       DOWNLOAD BUTTON
+    ========================= */
 
     .download-btn {
+
       width: 100%;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
+
       gap: 10px;
 
       padding: 17px;
 
       background: #ffc107;
+
       color: #111111;
 
       border-radius: 16px;
@@ -120,6 +170,7 @@
       text-decoration: none;
 
       font-size: 17px;
+
       font-weight: 800;
 
       box-shadow:
@@ -136,38 +187,61 @@
       transform: scale(.98);
     }
 
-    /* BROWSER BUTTON */
+
+    /* =========================
+       OPEN IN CHROME BUTTON
+    ========================= */
 
     .browser-btn {
+
       width: 100%;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
+
       gap: 9px;
 
       margin-top: 12px;
+
       padding: 14px;
 
       background: #242830;
+
       color: #ffffff;
 
       border: 1px solid #383e48;
+
       border-radius: 15px;
 
       text-decoration: none;
 
       font-size: 14px;
+
       font-weight: 700;
+
+      cursor: pointer;
+
+      transition: .2s;
     }
 
     .browser-btn:hover {
       background: #2c313a;
     }
 
-    /* INSTAGRAM NOTICE */
+    .browser-btn:active {
+      transform: scale(.98);
+    }
+
+
+    /* =========================
+       INSTAGRAM NOTICE
+    ========================= */
 
     .browser-note {
+
       margin-top: 15px;
 
       padding: 14px;
@@ -181,6 +255,7 @@
       color: #aeb4bd;
 
       font-size: 12px;
+
       line-height: 1.65;
     }
 
@@ -188,9 +263,13 @@
       color: #ffc107;
     }
 
-    /* SECURE */
+
+    /* =========================
+       SECURITY
+    ========================= */
 
     .secure {
+
       margin-top: 14px;
 
       color: #7ddc91;
@@ -198,11 +277,17 @@
       font-size: 13px;
     }
 
-    /* APP INFO */
+
+    /* =========================
+       APP INFO
+    ========================= */
 
     .info {
+
       display: flex;
+
       justify-content: space-between;
+
       gap: 8px;
 
       margin-top: 25px;
@@ -210,10 +295,12 @@
       padding: 18px 4px;
 
       border-top: 1px solid #292e36;
+
       border-bottom: 1px solid #292e36;
     }
 
     .info-item {
+
       flex: 1;
 
       color: #8f96a1;
@@ -222,6 +309,7 @@
     }
 
     .info-item strong {
+
       display: block;
 
       color: #ffffff;
@@ -231,21 +319,27 @@
       margin-bottom: 5px;
     }
 
-    /* INSTALLATION */
+
+    /* =========================
+       INSTALLATION
+    ========================= */
 
     .steps {
+
       text-align: left;
 
       margin-top: 28px;
     }
 
     .steps h2 {
+
       font-size: 19px;
 
       margin-bottom: 17px;
     }
 
     .step {
+
       display: flex;
 
       gap: 12px;
@@ -260,6 +354,7 @@
     }
 
     .number {
+
       min-width: 27px;
 
       height: 27px;
@@ -281,9 +376,13 @@
       font-weight: 800;
     }
 
-    /* FOOTER */
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     .footer {
+
       margin-top: 20px;
 
       text-align: center;
@@ -295,7 +394,10 @@
       line-height: 1.6;
     }
 
-    /* MOBILE */
+
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 380px) {
 
@@ -310,7 +412,9 @@
       }
 
       .logo {
+
         width: 95px;
+
         height: 95px;
       }
 
@@ -324,13 +428,19 @@
 
 </head>
 
+
 <body>
+
 
   <div class="container">
 
+
     <div class="card">
 
-      <!-- CARTPRIME LOGO -->
+
+      <!-- =========================
+           CARTPRIME LOGO
+      ========================= -->
 
       <img
         src="https://plain-apac-prod-public.komododecks.com/202609/06/gwycqEbIEqoGFqsTtwzV/image.png"
@@ -339,11 +449,18 @@
       >
 
 
-      <!-- TITLE -->
+      <!-- =========================
+           TITLE
+      ========================= -->
 
       <h1>
+
         Welcome to
-        <span class="highlight">CartPrime</span>
+
+        <span class="highlight">
+          CartPrime
+        </span>
+
       </h1>
 
 
@@ -355,13 +472,18 @@
       </p>
 
 
-      <!-- EARNING -->
+      <!-- =========================
+           EARNING
+      ========================= -->
 
       <div class="earning">
 
         <div class="earning-title">
+
           💰 Shop. Share. Earn.
+
         </div>
+
 
         <div class="earning-text">
 
@@ -374,7 +496,9 @@
       </div>
 
 
-      <!-- DOWNLOAD APK -->
+      <!-- =========================
+           APK DOWNLOAD
+      ========================= -->
 
       <a
         href="./CartPrimeStore.apk"
@@ -387,21 +511,25 @@
       </a>
 
 
-      <!-- OPEN WEBSITE -->
+      <!-- =========================
+           OPEN DOWNLOAD PAGE IN CHROME
+      ========================= -->
 
       <a
-        href="https://cartprime.vercel.app/"
+        href="https://cartprime.netlify.app/"
         class="browser-btn"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
       >
 
-        🌐 Open CartPrime in Browser
+        🌐 Open Download Page in Browser
 
       </a>
 
 
-      <!-- INSTAGRAM NOTICE -->
+      <!-- =========================
+           INSTAGRAM NOTICE
+      ========================= -->
 
       <div class="browser-note">
 
@@ -416,7 +544,9 @@
       </div>
 
 
-      <!-- SECURITY -->
+      <!-- =========================
+           SECURITY
+      ========================= -->
 
       <div class="secure">
 
@@ -425,13 +555,18 @@
       </div>
 
 
-      <!-- APP INFO -->
+      <!-- =========================
+           APP INFO
+      ========================= -->
 
       <div class="info">
 
+
         <div class="info-item">
 
-          <strong>Android</strong>
+          <strong>
+            Android
+          </strong>
 
           Supported
 
@@ -440,7 +575,9 @@
 
         <div class="info-item">
 
-          <strong>APK</strong>
+          <strong>
+            APK
+          </strong>
 
           Direct Download
 
@@ -449,18 +586,24 @@
 
         <div class="info-item">
 
-          <strong>Free</strong>
+          <strong>
+            Free
+          </strong>
 
           Download
 
         </div>
 
+
       </div>
 
 
-      <!-- INSTALLATION -->
+      <!-- =========================
+           INSTALLATION
+      ========================= -->
 
       <div class="steps">
+
 
         <h2>
           How to Install
@@ -530,12 +673,16 @@
 
         </div>
 
+
       </div>
+
 
     </div>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+    ========================= -->
 
     <div class="footer">
 
@@ -547,7 +694,9 @@
 
     </div>
 
+
   </div>
+
 
 </body>
 </html>
