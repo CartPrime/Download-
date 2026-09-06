@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Download CartPrime App</title>
-  <meta name="description" content="Download the official CartPrime Android app and explore shopping and earning opportunities.">
+
+  <meta name="description"
+    content="Download the official CartPrime Android app and explore shopping and earning opportunities.">
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -22,7 +25,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      padding: 18px;
     }
 
     .container {
@@ -32,22 +35,30 @@
 
     .card {
       background: #15181d;
-      border: 1px solid #272b32;
+      border: 1px solid #292e36;
       border-radius: 30px;
-      padding: 35px 25px;
+      padding: 32px 24px;
       text-align: center;
-      box-shadow: 0 20px 60px rgba(0,0,0,.45);
+      box-shadow: 0 20px 60px rgba(0,0,0,.5);
     }
 
+    /* CARTPRIME LOGO */
+
     .logo {
-      width: 105px;
-      height: 105px;
-      border-radius: 28px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
       object-fit: cover;
       display: block;
       margin: 0 auto 20px;
-      box-shadow: 0 10px 35px rgba(255, 193, 7, .18);
+
+      box-shadow:
+        0 10px 35px rgba(255,193,7,.25);
+
+      border: 2px solid #ffc107;
     }
+
+    /* TITLE */
 
     h1 {
       font-size: 30px;
@@ -63,140 +74,254 @@
       color: #aeb4bd;
       font-size: 15px;
       line-height: 1.7;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
+    /* EARNING BOX */
+
     .earning {
-      background: #1c1f25;
-      border: 1px solid #30343c;
-      border-radius: 18px;
-      padding: 16px;
+      background: #1c2026;
+      border: 1px solid #323740;
+      border-radius: 19px;
+      padding: 17px;
       margin: 20px 0;
     }
 
     .earning-title {
-      font-size: 16px;
-      font-weight: 700;
       color: #ffc107;
-      margin-bottom: 7px;
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 8px;
     }
 
     .earning-text {
       color: #c4c8ce;
       font-size: 13px;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
+    /* DOWNLOAD BUTTON */
+
     .download-btn {
+      width: 100%;
+
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
-      width: 100%;
+
       padding: 17px;
+
       background: #ffc107;
       color: #111111;
-      text-decoration: none;
+
       border-radius: 16px;
+
+      text-decoration: none;
+
       font-size: 17px;
       font-weight: 800;
-      box-shadow: 0 10px 25px rgba(255,193,7,.18);
-      transition: .25s;
+
+      box-shadow:
+        0 10px 25px rgba(255,193,7,.2);
+
+      transition: .2s;
     }
 
     .download-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 35px rgba(255,193,7,.28);
+      transform: translateY(-2px);
     }
 
     .download-btn:active {
       transform: scale(.98);
     }
 
+    /* BROWSER BUTTON */
+
+    .browser-btn {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+
+      margin-top: 12px;
+      padding: 14px;
+
+      background: #242830;
+      color: #ffffff;
+
+      border: 1px solid #383e48;
+      border-radius: 15px;
+
+      text-decoration: none;
+
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .browser-btn:hover {
+      background: #2c313a;
+    }
+
+    /* INSTAGRAM NOTICE */
+
+    .browser-note {
+      margin-top: 15px;
+
+      padding: 14px;
+
+      background: #20242b;
+
+      border: 1px solid #343a44;
+
+      border-radius: 15px;
+
+      color: #aeb4bd;
+
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    .browser-note b {
+      color: #ffc107;
+    }
+
+    /* SECURE */
+
     .secure {
       margin-top: 14px;
+
       color: #7ddc91;
+
       font-size: 13px;
     }
+
+    /* APP INFO */
 
     .info {
       display: flex;
       justify-content: space-between;
       gap: 8px;
+
       margin-top: 25px;
-      padding: 18px 5px;
-      border-top: 1px solid #292d34;
-      border-bottom: 1px solid #292d34;
+
+      padding: 18px 4px;
+
+      border-top: 1px solid #292e36;
+      border-bottom: 1px solid #292e36;
     }
 
     .info-item {
       flex: 1;
+
       color: #8f96a1;
+
       font-size: 12px;
     }
 
     .info-item strong {
       display: block;
+
       color: #ffffff;
+
       font-size: 13px;
+
       margin-bottom: 5px;
     }
 
+    /* INSTALLATION */
+
     .steps {
       text-align: left;
+
       margin-top: 28px;
     }
 
     .steps h2 {
       font-size: 19px;
+
       margin-bottom: 17px;
     }
 
     .step {
       display: flex;
+
       gap: 12px;
-      margin-bottom: 14px;
+
+      margin-bottom: 15px;
+
       color: #aeb4bd;
+
       font-size: 13px;
+
       line-height: 1.6;
     }
 
     .number {
       min-width: 27px;
+
       height: 27px;
+
       border-radius: 50%;
+
       background: #ffc107;
+
       color: #111111;
+
       display: flex;
+
       align-items: center;
+
       justify-content: center;
+
       font-size: 12px;
+
       font-weight: 800;
     }
 
+    /* FOOTER */
+
     .footer {
       margin-top: 20px;
+
       text-align: center;
+
       color: #666d77;
+
       font-size: 11px;
+
       line-height: 1.6;
     }
 
+    /* MOBILE */
+
     @media (max-width: 380px) {
+
+      body {
+        padding: 12px;
+      }
+
       .card {
-        padding: 28px 18px;
+        padding: 27px 17px;
+
+        border-radius: 25px;
+      }
+
+      .logo {
+        width: 95px;
+        height: 95px;
       }
 
       h1 {
         font-size: 26px;
       }
 
-      .logo {
-        width: 90px;
-        height: 90px;
-      }
     }
+
   </style>
+
 </head>
 
 <body>
@@ -206,24 +331,32 @@
     <div class="card">
 
       <!-- CARTPRIME LOGO -->
-      <!-- Keep 31372.png in the same folder as this HTML file -->
+
       <img
-        src="./31372.png"
+        src="https://plain-apac-prod-public.komododecks.com/202609/06/gwycqEbIEqoGFqsTtwzV/image.png"
         class="logo"
         alt="CartPrime Logo"
-        onerror="this.style.display='none'"
       >
 
+
+      <!-- TITLE -->
+
       <h1>
-        Welcome to <span class="highlight">CartPrime</span>
+        Welcome to
+        <span class="highlight">CartPrime</span>
       </h1>
 
+
       <p class="subtitle">
-        Download the official CartPrime Android app and enjoy a faster,
-        smoother shopping experience.
+
+        Download the official CartPrime Android app
+        and enjoy a faster, smoother shopping experience.
+
       </p>
 
-      <!-- EARNING SECTION -->
+
+      <!-- EARNING -->
+
       <div class="earning">
 
         <div class="earning-title">
@@ -231,87 +364,187 @@
         </div>
 
         <div class="earning-text">
+
           Discover earning opportunities with CartPrime.
           Share products, grow your reach, and earn through
           eligible CartPrime programs.
+
         </div>
 
       </div>
 
-      <!-- APK DOWNLOAD -->
+
+      <!-- DOWNLOAD APK -->
+
       <a
         href="./CartPrimeStore.apk"
         class="download-btn"
         download="CartPrimeStore.apk"
       >
+
         📱 Download CartPrime App
+
       </a>
 
-      <div class="secure">
-        ✓ Official CartPrime Android App
+
+      <!-- OPEN WEBSITE -->
+
+      <a
+        href="https://cartprime.vercel.app/"
+        class="browser-btn"
+        target="_blank"
+        rel="noopener"
+      >
+
+        🌐 Open CartPrime in Browser
+
+      </a>
+
+
+      <!-- INSTAGRAM NOTICE -->
+
+      <div class="browser-note">
+
+        ⚠️ <b>Instagram users:</b>
+
+        <br><br>
+
+        If the APK download does not start inside Instagram,
+        tap the <b>⋯ menu</b> and choose
+        <b>Open in browser</b> or <b>Open in Chrome</b>.
+
       </div>
 
-      <!-- APP INFORMATION -->
+
+      <!-- SECURITY -->
+
+      <div class="secure">
+
+        ✓ Official CartPrime Android App
+
+      </div>
+
+
+      <!-- APP INFO -->
+
       <div class="info">
 
         <div class="info-item">
+
           <strong>Android</strong>
+
           Supported
+
         </div>
 
+
         <div class="info-item">
+
           <strong>APK</strong>
+
           Direct Download
+
         </div>
 
+
         <div class="info-item">
+
           <strong>Free</strong>
+
           Download
+
         </div>
 
       </div>
 
+
       <!-- INSTALLATION -->
+
       <div class="steps">
 
-        <h2>How to Install</h2>
+        <h2>
+          How to Install
+        </h2>
+
 
         <div class="step">
-          <span class="number">1</span>
-          <span>
-            Tap <b>Download CartPrime App</b> and wait for the APK to download.
+
+          <span class="number">
+            1
           </span>
+
+          <span>
+
+            Tap <b>Download CartPrime App</b>
+            and wait for the APK to download.
+
+          </span>
+
         </div>
 
-        <div class="step">
-          <span class="number">2</span>
-          <span>
-            Open the downloaded <b>CartPrimeStore.apk</b> file.
-          </span>
-        </div>
 
         <div class="step">
-          <span class="number">3</span>
-          <span>
-            If Android asks for permission, allow installation from this source.
+
+          <span class="number">
+            2
           </span>
+
+          <span>
+
+            Open the downloaded
+            <b>CartPrimeStore.apk</b> file.
+
+          </span>
+
         </div>
 
+
         <div class="step">
-          <span class="number">4</span>
-          <span>
-            Tap <b>Install</b> and open the CartPrime app.
+
+          <span class="number">
+            3
           </span>
+
+          <span>
+
+            If Android asks for permission,
+            allow installation from this source.
+
+          </span>
+
+        </div>
+
+
+        <div class="step">
+
+          <span class="number">
+            4
+          </span>
+
+          <span>
+
+            Tap <b>Install</b>
+            and open the CartPrime app.
+
+          </span>
+
         </div>
 
       </div>
 
     </div>
 
+
+    <!-- FOOTER -->
+
     <div class="footer">
+
       © 2026 CartPrime. All rights reserved.
+
       <br>
+
       Download and use CartPrime responsibly.
+
     </div>
 
   </div>
