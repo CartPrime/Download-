@@ -44,7 +44,8 @@
       height: 105px;
       border-radius: 28px;
       object-fit: cover;
-      margin-bottom: 20px;
+      display: block;
+      margin: 0 auto 20px;
       box-shadow: 0 10px 35px rgba(255, 193, 7, .18);
     }
 
@@ -91,19 +92,14 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-
       width: 100%;
       padding: 17px;
-
       background: #ffc107;
       color: #111111;
-
       text-decoration: none;
       border-radius: 16px;
-
       font-size: 17px;
       font-weight: 800;
-
       box-shadow: 0 10px 25px rgba(255,193,7,.18);
       transition: .25s;
     }
@@ -127,10 +123,8 @@
       display: flex;
       justify-content: space-between;
       gap: 8px;
-
       margin-top: 25px;
       padding: 18px 5px;
-
       border-top: 1px solid #292d34;
       border-bottom: 1px solid #292d34;
     }
@@ -162,7 +156,6 @@
       display: flex;
       gap: 12px;
       margin-bottom: 14px;
-
       color: #aeb4bd;
       font-size: 13px;
       line-height: 1.6;
@@ -171,16 +164,12 @@
     .number {
       min-width: 27px;
       height: 27px;
-
       border-radius: 50%;
-
       background: #ffc107;
       color: #111111;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       font-size: 12px;
       font-weight: 800;
     }
@@ -188,7 +177,6 @@
     .footer {
       margin-top: 20px;
       text-align: center;
-
       color: #666d77;
       font-size: 11px;
       line-height: 1.6;
@@ -217,11 +205,13 @@
 
     <div class="card">
 
-      <!-- CartPrime Logo -->
+      <!-- CARTPRIME LOGO -->
+      <!-- Keep 31372.png in the same folder as this HTML file -->
       <img
-        src="31372.png"
+        src="./31372.png"
         class="logo"
-        alt="blob:https://tools.kommodo.ai/28388348-35dc-4baf-921b-c20d5fd19da8"
+        alt="CartPrime Logo"
+        onerror="this.style.display='none'"
       >
 
       <h1>
@@ -233,7 +223,7 @@
         smoother shopping experience.
       </p>
 
-      <!-- Earning Section -->
+      <!-- EARNING SECTION -->
       <div class="earning">
 
         <div class="earning-title">
@@ -248,9 +238,9 @@
 
       </div>
 
-      <!-- Download Button -->
+      <!-- APK DOWNLOAD -->
       <a
-        href="CartPrimeStore.apk"
+        href="./CartPrimeStore.apk"
         class="download-btn"
         download="CartPrimeStore.apk"
       >
@@ -261,7 +251,7 @@
         ✓ Official CartPrime Android App
       </div>
 
-      <!-- App Information -->
+      <!-- APP INFORMATION -->
       <div class="info">
 
         <div class="info-item">
@@ -281,7 +271,7 @@
 
       </div>
 
-      <!-- Installation Guide -->
+      <!-- INSTALLATION -->
       <div class="steps">
 
         <h2>How to Install</h2>
